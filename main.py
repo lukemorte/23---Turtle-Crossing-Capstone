@@ -28,6 +28,7 @@ while game_is_on:
     if player.ycor() > 280:
         player.reset_position()
         scoreboard.level_increment()
+        car_manager.speed_up()
 
     # update car manager
     car_manager.do_every_frame()
