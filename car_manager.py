@@ -23,7 +23,7 @@ class Car(Turtle):
         self.set_random_y()
 
     def set_random_y(self):
-        self.sety(random.choice(range(-250, 250, STARTING_MOVE_DISTANCE)))
+        self.sety(random.choice(range(-200, 200, STARTING_MOVE_DISTANCE)))
 
     def move(self):
         self.setx(self.xcor() - Car.speed)
